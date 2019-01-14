@@ -1,0 +1,267 @@
+/* HEADER STYLES ----------------------------------------------------------------------------------*/
+h1 { 
+    font-family: Courier New, monospace; 
+    font-size: 80px;
+    font-weight: 70; 
+    line-height: 26.4px; 
+}
+
+h2 {
+    font-family: Courier New, monospace; 
+    font-size: 25px; 
+    font-weight: 200;
+}
+
+h3 {
+    display:inline;
+    font-family: Courier New, monospace; 
+    font-size: 25px;
+    font-weight: 200;
+    border-style:solid; 
+    border-width: 1px;
+    padding: 5px 8px;
+}
+
+li,p{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Courier New, monospace;
+    font-size: 140%;
+}
+
+.section{
+    text-align:center;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+
+button{
+    border: 2px solid #c9c9c9;
+    color:#c9c9c9;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+button:hover{
+    border: 2px solid #f1b9be;
+    color:#f1b9be;
+}
+
+/* NAVIGATION BAR-------------------------------------------------------------------------------------------------- */
+#header{
+    position:fixed;
+    height: 35px;
+    width: 100%;
+    background: #333;
+    z-index:9;
+    text-align:center;
+    color: #f2f2f2;
+    padding: 20px 0 0 0;
+}
+
+.menuLink{
+    color:white;
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 5% 0 5%;
+}
+
+.menuLink:hover,.menuLink:active,.topnav .icon:hover {
+    color:#f1b9be;
+}
+
+.topnav .icon {
+    display: none;
+    color: white;
+    font-size: 160%;
+    margin-right: 5%;
+}
+
+.links:hover, mark{
+    background-color:#f1b9be;
+    color: black;
+}
+
+.links{
+    color: #f1b9be;
+    text-decoration: none;
+}
+
+/* SLIDES TEMPLATE-------------------------------------------------------------------------------------------------- */
+.fp-controlArrow.fp-prev {
+    background: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/back.png");
+    border: none;
+    width: 85px;
+    height: 100px;
+}
+
+.fp-controlArrow.fp-next {
+    background: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/forward.png");
+    border: none;
+    width: 85px;
+    height: 100px;
+}
+
+.left{
+    float:left;
+    width:50%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right{
+    float:right;
+    width:50%;
+    height:100%;
+}
+
+/* for design and projects */
+.title{
+    position: absolute;
+    top:30%;
+}
+.text{
+    position: relative;
+    margin:0px 0px 0px 0px;
+    padding-right:20%;
+    top:40%
+}
+
+/* DESIGN------------------------------------------------------------------------------------------------------ */
+#kendama-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/kendama.jpg");
+    background-size: 80%;
+    padding:0px 0px 0px 0px;
+}
+#porter-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/porter.jpg");
+    background-size: 80%;
+    padding:0px 0px 0px 0px;
+}
+
+#kendama-title{
+    left:25%;
+}
+#porter-title{
+    left:75%;
+}
+
+/* PROJECTS------------------------------------------------------------------------------------------------------ */
+
+#itl-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/itl.png");
+    background-size: 60%
+}
+#ieee-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/ieee.png");
+    background-size: 60%
+}
+#mdi-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/kit.png");
+    background-size: 60%
+}
+#alert-left{
+    background-image: url("https://s3.us-east-2.amazonaws.com/chelly-website/images/aa.png");
+    background-size: 60%
+}
+
+#itl-title{
+    left:12.5%;
+}
+#ieee-title{
+    left:37.5%;
+}
+#mdi-title{
+    left:62.5%;
+}
+#alert-title{
+    left:87.5%;
+}
+
+/* CONTACT------------------------------------------------------------------------------------------------------ */
+#mail{
+    width:28px;
+    padding-bottom:5px; 
+    padding-right: 30px; 
+    position: relative; 
+    float:center;
+}
+#link{
+    width:28px;
+    position: relative; 
+    right: 5px;  
+}
+#git{
+    width:28px;
+    padding-left:30px; 
+    position: relative; 
+    right: 10px;  
+}
+
+/* SMALLER SCREENS------------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 615px){
+    #itl-left,#ieee-left,#mdi-left,#alert-left,#kendama-left,#porter-left{
+        display: none
+    }
+    .right{
+        width:100%;
+    }
+    #itl-title,#ieee-title,#mdi-title,#alert-title{
+        margin-left:-6%;
+    }
+    #kendama-title,#porter-title{
+        margin-left:-10%
+    }
+    #itl-text,#ieee-text,#mdi-text,#alert-text,#kendama-text,#porter-text{
+        top:40%;
+        margin: 0% 0% 0% 25%
+    }
+}
+
+@media screen and (max-width: 755px) {
+    /* NAVIGATION BAR --------------------------*/
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        background-color:white;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    .topnav.responsive a {
+      display: block;
+      text-align: center;
+      background:#333;
+      line-height:150%;
+    }
+    #itl-title,#mdi-title,#kendama-title,#porter-title{
+        top:20%
+    }
+    #itl-text,#mdi-text,#kendama-text,#porter-text{
+        top:30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    h1{
+        line-height:75%
+    }
+    li,p{
+        margin:10px;
+        padding:0;
+    }
+}
+
