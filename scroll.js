@@ -3,7 +3,10 @@ var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#f1f1f1','white', '#f1f1f1', 'white', '#f1f1f1'],
     css3: true,
     scrollOverflow: true,
-    menu: '#header'
+    menu: '#header',
+    responsiveHeight: 500, responsiveWidth: 500,
+        afterResponsive: function(isResponsive){
+        },
 });
 
 $(document).ready(function(){
