@@ -127,7 +127,7 @@ button:hover{
 
 /* for design and projects */
 .title{
-    position: fixed;
+    position: absolute;
     top:30%;
 }
 .text{
