@@ -32,6 +32,7 @@ li,p{
 
 .section{
     text-align:center;
+    min-height:700px
 }
 
 .logo{
@@ -126,7 +127,7 @@ button:hover{
 
 /* for design and projects */
 .title{
-    position: absolute;
+    position: fixed;
     top:30%;
 }
 .text{
@@ -266,4 +267,3 @@ button:hover{
         padding:0;
     }
 }
-
