@@ -2,7 +2,8 @@ var myFullpage = new fullpage('#fullpage', {
     anchors: ['landing', 'about', 'projects', 'design', 'contact'],
     sectionsColor: ['#f1f1f1','white', '#f1f1f1', 'white', '#f1f1f1'],
     css3: true,
-    scrollOverflow: true
+    scrollOverflow: true,
+    menu: '#header'
 });
 
 $(document).ready(function(){
